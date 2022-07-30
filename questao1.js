@@ -8,14 +8,13 @@
 
 let entreComValor = 2584 //coloque seu valor aqui
 
-const fibonacci = (somaDosValores, valor1 = 1, valor0 = 0) => {
-    if(valor1 < somaDosValores){
-       return fibonacci(somaDosValores, valor1+valor0, valor1);
+const fibonacci = (consulta, valor1 = 1, valor0 = 0) => {
+    if (valor1 < consulta) {
+        return fibonacci(consulta, valor1 + valor0, valor1);
     };
-    if(valor1 === somaDosValores){
-       return true;
+    if (valor1 === consulta) {
+        return true;
     }
     return false;
- };
- console.log(fibonacci(entreComValor));
- 
+};
+console.log(fibonacci(entreComValor));
