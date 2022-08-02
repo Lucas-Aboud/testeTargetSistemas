@@ -13,8 +13,8 @@ const fibonacci = (consulta, valor1 = 1, valor0 = 0) => {
         return fibonacci(consulta, valor1 + valor0, valor1);
     };
     if (valor1 === consulta) {
-        return true;
+        return console.log('Faz parte da sequencia Fibonacci');
     }
-    return false;
+    return console.log('Não faz parte da sequencia Fibonacci');
 };
 console.log(fibonacci(entreComValor));
