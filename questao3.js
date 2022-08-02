@@ -20,6 +20,6 @@ const valoresEstados = {
 
 function mediaEstados(valor) {    
     totalEstados = valoresEstados.SP + valoresEstados.RJ + valoresEstados.MG + valoresEstados.ES + valoresEstados.Outros
-    return (totalEstados%5)
+    return (totalEstados/5)
 }
 console.log(mediaEstados(valoresEstados))
