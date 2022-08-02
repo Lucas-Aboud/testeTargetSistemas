@@ -18,8 +18,8 @@ const valoresEstados = {
 }
 
 
-function mediaEstados() {    
-    totalEstados = valoresEstados.SP + valoresEstados.RJ +valoresEstados.MG + valoresEstados.ES + valoresEstados.Outros
-    return totalEstados%4
+function mediaEstados(valor) {    
+    totalEstados = valoresEstados.SP + valoresEstados.RJ + valoresEstados.MG + valoresEstados.ES + valoresEstados.Outros
+    return (totalEstados%5)
 }
 console.log(mediaEstados(valoresEstados))
