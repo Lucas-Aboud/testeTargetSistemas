@@ -8,3 +8,18 @@
 
 // Escreva um programa na linguagem que desejar onde calcule o percentual de representação 
 // que cada estado teve dentro do valor total mensal da distribuidora.
+
+const valoresEstados = {
+    SP: 67836.43,
+    RJ: 36678.66,
+    MG: 29229.88,
+    ES: 27165.48,
+    Outros: 19849.53
+}
+
+
+function mediaEstados() {    
+    totalEstados = valoresEstados.SP + valoresEstados.RJ +valoresEstados.MG + valoresEstados.ES + valoresEstados.Outros
+    return totalEstados%4
+}
+console.log(mediaEstados(valoresEstados))
